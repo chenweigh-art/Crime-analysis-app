@@ -5,9 +5,9 @@ from scipy.stats import chi2_contingency
 
 # --- PAGE SETUP ---
 st.set_page_config(page_title="Chicago Crime Dashboard", layout="wide")
-st.title("🛡️ Chicago Crime Analysis (2015-2025)")
+st.title("🛡️ Chicago Crime Analysis (2015-2024)")
 
-# --- DATA LOADING (OPTION B: GOOGLE DRIVE) ---
+# --- DATA LOADING ---
 @st.cache_data
 def load_data():
     # Direct download link created from your File ID
@@ -83,3 +83,4 @@ if df is not None:
 
 else:
     st.info("Awaiting data from Google Drive...")
+
