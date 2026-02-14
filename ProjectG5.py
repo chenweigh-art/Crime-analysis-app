@@ -6,7 +6,7 @@ import os
 
 # --- PAGE SETUP ---
 st.set_page_config(page_title="Chi-Town Sentinel", layout="wide", page_icon="🛡️")
-st.title("🛡️ Chi-Town Sentinel: Chicago Crime Analysis (2015-2025)")
+st.title("🛡️ Chicago Crime Analysis (2015-2024)")
 
 # --- DATA LOADING (Option B: Google Drive) ---
 @st.cache_data(show_spinner="Connecting to Sentinel Data Stream (2015-2025)...")
@@ -80,3 +80,4 @@ if df is not None:
 
 else:
     st.info("Searching for file...  ensure terminal is in the correct folder.")
+
